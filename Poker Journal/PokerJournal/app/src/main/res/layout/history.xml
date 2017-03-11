@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ethan.pokerjournal.HistoryFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:id="@+id/buttonNewGame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickNewGame" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listGames"
+        android:layout_below="@+id/buttonNewGame"
+        android:layout_alignEnd="@+id/buttonNewGame"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:id="@+id/buttonResetGames"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickResetGame" />
+
+</RelativeLayout>
